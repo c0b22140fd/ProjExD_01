@@ -5,7 +5,7 @@ def main():
     pg.display.set_caption("はじめてのPygame")
     screen = pg.display.set_mode((800, 600))
     clock  = pg.time.Clock()
-    fonto  = pg.font.Font(None, 80)
+    fonto  = pg.font.Font(None, 80) #Noneはフォントの種類
     tmr = 0
 
     while True:
@@ -17,7 +17,7 @@ def main():
         screen.fill((0, 0, 0))
         screen.blit(txt, [300, 200])
         pg.display.update()
-        clock.tick(1)
+        clock.tick(1) #1秒にn回回る。今回はn=1
 
 
 if __name__ == "__main__":
